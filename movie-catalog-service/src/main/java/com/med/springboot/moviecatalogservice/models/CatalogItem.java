@@ -2,14 +2,14 @@ package com.med.springboot.moviecatalogservice.models;
 
 public class CatalogItem {
 	
+	
 	public CatalogItem(String name,String desc,int rating) {
 		this.name = name;
 		this.desc = desc;
-		this.rating = rating;
+		this.rating=rating;
 	}
-	
-	private String name;
-	private String desc;
+	String name , desc;
+	int rating;
 	public String getName() {
 		return name;
 	}
@@ -22,12 +22,13 @@ public class CatalogItem {
 	public void setDesc(String desc) {
 		this.desc = desc;
 	}
-	public int getRatings() {
+	public int getRating() {
 		return rating;
 	}
-	public void setRatings(int ratings) {
-		this.rating = ratings;
+	public void setRating(int rating) {
+		this.rating = rating;
 	}
-	private int rating;
+	
+	
 
 }
