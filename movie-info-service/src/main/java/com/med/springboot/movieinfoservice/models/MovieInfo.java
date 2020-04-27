@@ -2,33 +2,32 @@ package com.med.springboot.movieinfoservice.models;
 
 public class MovieInfo {
 
-	String movieId;
+	private String id;
+    private String title;
+    private String overview;
 
-	String name;
+    public String getId() {
+        return id;
+    }
 
-	public MovieInfo(String movieId, String name) {
-		this.movieId = movieId;
-		this.name = name;
-	}
+    public void setId(String id) {
+        this.id = id;
+    }
 
+    public String getTitle() {
+        return title;
+    }
 
-	public String getMovieId() {
-		return movieId;
-	}
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
+    public String getOverview() {
+        return overview;
+    }
 
-	public void setMovieId(String movieId) {
-		this.movieId = movieId;
-	}
-
-
-	public String getName() {
-		return name;
-	}
-
-
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setOverview(String overview) {
+        this.overview = overview;
+    }
 
 }

@@ -22,7 +22,7 @@ public class CatalogResources {
 	@RequestMapping("/{userId}")
 	List<CatalogItem> getCatalog(String userId){
 		
-		MovieInfo movieInfo = restTemplate.getForObject("http://MOVIE-INFO-SERVICE/movie/1234",MovieInfo.class);
+		MovieInfo movieInfo = restTemplate.getForObject("http://MOVIE-INFO-SERVICE/movie/100",MovieInfo.class);
 		return Collections.singletonList(new CatalogItem(movieInfo.getName(),"Transformers description",5));
 	}
 	
